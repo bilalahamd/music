@@ -1,0 +1,37 @@
+body {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  background-color: #261b2c;
+  h1,
+  h2,
+  h3,
+  p {
+    font-family: "Lato", sans-serif;
+    color: white;
+  }
+}
+.App {
+  transition: all 1s ease;
+}
+
+.library__active {
+  margin-left: 30%;
+}
+
+@import "./player";
+@import "./song";
+@import "./library";
+@import "./nav";
+@import "./pagination";
+
+@media screen and(max-width: 992px) {
+  .library__active {
+    margin-left: 40%;
+  }
+}
+@media screen and(max-width: 768px) {
+  .library__active {
+    margin-left: unset;
+  }
+}

@@ -1,0 +1,64 @@
+.player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 20vh;
+}
+.time__controler {
+  display: flex;
+  min-width: 50%;
+
+  input {
+    width: 100%;
+    padding: 1rem 0rem;
+    cursor: pointer;
+  }
+  p {
+    padding: 1rem;
+    margin-top: 0.8rem;
+  }
+}
+.play__controler {
+  display: flex;
+  width: 30%;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.play {
+  cursor: pointer;
+  width: 30%;
+  height: 16vh;
+  border-radius: 50%;
+  background-color: transparent;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 1500px) {
+  .time__controler {
+    width: 60%;
+  }
+  .play__controler {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .time__controler {
+    width: 90%;
+  }
+  .play__controler {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .time__controler {
+    width: 90%;
+  }
+  .play__controler {
+    width: 60%;
+  }
+}

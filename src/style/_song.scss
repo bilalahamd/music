@@ -1,0 +1,24 @@
+.songs__container {
+  min-height: 50vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 20%;
+    border-radius: 50%;
+  }
+  h2 {
+    padding-top: 2rem;
+    font-weight: bolder;
+    color: #e16000;
+  }
+}
+@media screen and(max-width:768px) {
+  .songs__container {
+    img {
+      width: 40%;
+    }
+  }
+}

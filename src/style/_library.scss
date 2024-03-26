@@ -1,0 +1,83 @@
+.library {
+  position: fixed;
+  width: 20rem;
+  top: 0%;
+  left: 0;
+  height: 100%;
+
+  box-shadow: 1px 1px 22px #98399a;
+  overflow-y: scroll;
+  transform: translateX(-100%);
+  transition: all 1s ease;
+  opacity: 0;
+  z-index: 3;
+  h1 {
+    padding: 0.8rem 3rem 0rem 3rem;
+    margin-left: 1rem;
+    font-family: "EB Garamond", serif;
+    color: #e16000;
+  }
+}
+.single__song {
+  display: flex;
+  padding: 1rem 3rem 1rem 3rem;
+  align-items: center;
+  cursor: pointer;
+  img {
+    width: 30%;
+  }
+  &:hover {
+    background-color: rgb(75, 77, 75);
+  }
+}
+.song__description {
+  padding: 1rem;
+  h2 {
+    font-size: 1rem;
+    font-weight: bolder;
+  }
+  h3 {
+    font-size: 0.9rem;
+  }
+}
+.selected {
+  background-color: #261b2c;
+}
+
+.toggle {
+  transform: translateX(0%);
+  opacity: 1;
+  color: black;
+  background-color: rgb(23, 24, 23);
+}
+*::-webkit-scrollbar {
+  width: 0.5rem;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #7363a2;
+}
+*::-webkit-scrollbar-track {
+  background-color: #261b2c;
+}
+@media screen and(max-width:768px) {
+  .library {
+    width: 100%;
+    color: white;
+    background-color: #2a2d38;
+  }
+  .library_songs {
+    margin-top: 5rem;
+  }
+
+  .song__description {
+    padding: 1rem;
+    h2 {
+      font-size: 1rem;
+      color: white;
+    }
+    h3 {
+      font-size: 0.7rem;
+      color: white;
+    }
+  }
+}

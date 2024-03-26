@@ -1,0 +1,87 @@
+nav {
+  margin-top: 1rem;
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: pink;
+
+  h2 {
+    font-family: "EB Garamond", serif;
+    color: #e16000;
+    margin-top: 0.3rem;
+  }
+  button {
+    background: transparent;
+    display: flex;
+    border: none;
+    border: 2px solid #e16000 !important;
+    padding: 0.5rem;
+    color: white;
+    font-size: 1rem;
+    font-family: "EB Garamond", serif;
+    cursor: pointer;
+    &:hover {
+      background-color: rgb(65, 65, 65);
+      color: white;
+      transition: all 0.5s ease-in-out;
+    }
+  }
+}
+
+.music-icon {
+  color: #e16000 !important;
+}
+.logo {
+  display: flex;
+  gap: 0.2rem;
+}
+@media screen and(max-width:768px) {
+  nav {
+    button {
+      z-index: 10;
+      background-color: transparent;
+      color: #e16000;
+      margin-bottom: 3rem;
+      margin-right: 3rem;
+    }
+    .logo {
+      margin-bottom: 3rem;
+      margin-right: 3rem;
+    }
+  }
+}
+@media screen and(max-width:618px) {
+  nav {
+    button {
+      z-index: 10;
+      background-color: transparent;
+      color: #e16000;
+      margin-bottom: 3rem;
+      margin-right: 3rem;
+    }
+  }
+  .logo {
+    margin-bottom: 3rem;
+    margin-right: 3rem;
+  }
+}
+
+@media screen and(max-width:411px) {
+  .logo {
+    gap: 0rem;
+    h2 {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
+  }
+}
+@media screen and(max-width:320px) {
+  .logo {
+    gap: 0rem;
+    h2 {
+      font-size: 0.7rem;
+      margin-top: 1rem;
+    }
+  }
+}

@@ -1,0 +1,395 @@
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  background-color: #261b2c;
+}
+
+body h1,
+body h2,
+body h3,
+body p {
+  font-family: "Lato", sans-serif;
+  color: white;
+}
+
+.App {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.library__active {
+  margin-left: 30%;
+}
+
+.player {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  min-height: 20vh;
+}
+
+.time__controler {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 50%;
+}
+
+.time__controler input {
+  width: 100%;
+  padding: 1rem 0rem;
+  cursor: pointer;
+}
+
+.time__controler p {
+  padding: 1rem;
+  margin-top: 0.8rem;
+}
+
+.play__controler {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+}
+
+.play {
+  cursor: pointer;
+  width: 30%;
+  height: 16vh;
+  border-radius: 50%;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 1500px) {
+  .time__controler {
+    width: 60%;
+  }
+  .play__controler {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .time__controler {
+    width: 90%;
+  }
+  .play__controler {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .time__controler {
+    width: 90%;
+  }
+  .play__controler {
+    width: 60%;
+  }
+}
+
+.songs__container {
+  min-height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.songs__container img {
+  width: 20%;
+  border-radius: 50%;
+}
+
+.songs__container h2 {
+  padding-top: 2rem;
+  font-weight: bolder;
+  color: #e16000;
+}
+
+@media screen and (max-width: 768px) {
+  .songs__container img {
+    width: 40%;
+  }
+}
+
+.library {
+  position: fixed;
+  width: 20rem;
+  top: 0%;
+  left: 0;
+  height: 100%;
+  -webkit-box-shadow: 1px 1px 22px #98399a;
+          box-shadow: 1px 1px 22px #98399a;
+  overflow-y: scroll;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  opacity: 0;
+  z-index: 3;
+}
+
+.library h1 {
+  padding: 0.8rem 3rem 0rem 3rem;
+  margin-left: 1rem;
+  font-family: "EB Garamond", serif;
+  color: #e16000;
+}
+
+.single__song {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem 3rem 1rem 3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.single__song img {
+  width: 30%;
+}
+
+.single__song:hover {
+  background-color: #4b4d4b;
+}
+
+.song__description {
+  padding: 1rem;
+}
+
+.song__description h2 {
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+.song__description h3 {
+  font-size: 0.9rem;
+}
+
+.selected {
+  background-color: #261b2c;
+}
+
+.toggle {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  opacity: 1;
+  color: black;
+  background-color: #171817;
+}
+
+*::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #7363a2;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: #261b2c;
+}
+
+@media screen and (max-width: 768px) {
+  .library {
+    width: 100%;
+    color: white;
+    background-color: #2a2d38;
+  }
+  .library_songs {
+    margin-top: 5rem;
+  }
+  .song__description {
+    padding: 1rem;
+  }
+  .song__description h2 {
+    font-size: 1rem;
+    color: white;
+  }
+  .song__description h3 {
+    font-size: 0.7rem;
+    color: white;
+  }
+}
+
+nav {
+  margin-top: 1rem;
+  min-height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: pink;
+}
+
+nav h2 {
+  font-family: "EB Garamond", serif;
+  color: #e16000;
+  margin-top: 0.3rem;
+}
+
+nav button {
+  background: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: none;
+  border: 2px solid #e16000 !important;
+  padding: 0.5rem;
+  color: white;
+  font-size: 1rem;
+  font-family: "EB Garamond", serif;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background-color: #414141;
+  color: white;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.music-icon {
+  color: #e16000 !important;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  nav button {
+    z-index: 10;
+    background-color: transparent;
+    color: #e16000;
+    margin-bottom: 3rem;
+    margin-right: 3rem;
+  }
+  nav .logo {
+    margin-bottom: 3rem;
+    margin-right: 3rem;
+  }
+}
+
+@media screen and (max-width: 618px) {
+  nav button {
+    z-index: 10;
+    background-color: transparent;
+    color: #e16000;
+    margin-bottom: 3rem;
+    margin-right: 3rem;
+  }
+  .logo {
+    margin-bottom: 3rem;
+    margin-right: 3rem;
+  }
+}
+
+@media screen and (max-width: 411px) {
+  .logo {
+    gap: 0rem;
+  }
+  .logo h2 {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .logo {
+    gap: 0rem;
+  }
+  .logo h2 {
+    font-size: 0.7rem;
+    margin-top: 1rem;
+  }
+}
+
+.pagination > li > a {
+  background-color: #171817;
+  color: white !important;
+  border: solid 1px #e16000 !important;
+}
+
+.pagination > .active > a {
+  color: white;
+  background-color: #e16000 !important;
+  border: solid 1px #e16000 !important;
+}
+
+.pagination > .active > a:hover {
+  background-color: #261b2c !important;
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover {
+  color: #5a5a5a;
+  background-color: #261b2c;
+  border-color: #ddd;
+}
+
+.pagination {
+  margin-left: 3.5rem;
+}
+
+@media screen and (max-width: 992px) {
+  .library__active {
+    margin-left: 40%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .library__active {
+    margin-left: unset;
+  }
+}
+/*# sourceMappingURL=app.css.map */
